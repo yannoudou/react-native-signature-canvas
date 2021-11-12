@@ -52,15 +52,17 @@ export default (script) =>
       font-size: 10px;
       width: 100%;
       height: 100%;
-      border: 1px solid #e8e8e8;
+      border: 1.5px solid #eee;
       background-color: #fff;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+      box-shadow: none;
+      border-radius:10px; 
     }
     
     .m-signature-pad--body {
       position: relative;
       height: 100%;
       border: 1px solid #f4f4f4;
+      border-radius: 4px;
     }
     
     .m-signature-pad--body
@@ -71,7 +73,7 @@ export default (script) =>
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+        box-shadow:none;
       }
     
     .m-signature-pad--footer {
@@ -94,23 +96,31 @@ export default (script) =>
     .m-signature-pad--footer
       .button {
         background-color: #3F99F7;
-        height: 32px;
+        height: 34px;
         padding: 0 20px;
-        line-height: 32px;
+        line-height: 34px;
         text-align: center;
         color: #FFF;
         border: 1px solid transparent;
-        border-radius: 4px;
+        border-radius: 8px;
         outline: none;
         box-shadow: none;
       }
     
     .m-signature-pad--footer
       .button.clear {
+       color:#2a2e54;
+       background-color: transparent;
+       font-weight:Bold;
+       width:40%;
       }
     
     .m-signature-pad--footer
       .button.save {
+        color:#2a2e54;
+        background-color: #ffcd00;
+        font-weight:Bold;
+        width:60%;
       }
     
     @media screen and (max-width: 1024px) {
@@ -160,8 +170,7 @@ export default (script) =>
         <img style="position: absolute; top: 0; left: 0; pointer-events: none;" src=<%overlaySrc%> width=<%overlayWidth%> height=<%overlayHeight%> />
       </div>
       <div class="m-signature-pad--footer">
-        <button type="button" class="button clear" data-action="clear"><%clear%></button>
-        <div class="description"><%description%></div>
+        <button type="button" class="button clear" data-action="clear"><%clear%></button> 
         <button type="button" class="button save" data-action="save"><%confirm%></button>
       </div>
     </div>
