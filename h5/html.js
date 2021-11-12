@@ -96,9 +96,9 @@ export default (script) =>
     .m-signature-pad--footer
       .button {
         background-color: #3F99F7;
-        height: 34px;
+        height: 38px;
         padding: 0 20px;
-        line-height: 34px;
+        line-height: 38px;
         text-align: center;
         color: #FFF;
         border: 1px solid transparent;
@@ -120,7 +120,7 @@ export default (script) =>
         color:#2a2e54;
         background-color: #ffcd00;
         font-weight:Bold;
-        width:60%;
+        width:90%;
       }
     
     @media screen and (max-width: 1024px) {
